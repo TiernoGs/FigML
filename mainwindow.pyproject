@@ -1,0 +1,7 @@
+{
+    "files": [
+        "mainwindow.py",
+        "models/ihs.py",
+        "items/MainView.qml"
+        ]
+}
