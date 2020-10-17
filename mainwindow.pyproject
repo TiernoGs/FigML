@@ -2,6 +2,8 @@
     "files": [
         "mainwindow.py",
         "models/ihs.py",
-        "items/MainView.qml"
+        "items/MainView.qml",
+        "items/CustomPanel.qml",
+        "items/EditorIcon.qml"
         ]
 }

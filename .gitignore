@@ -8,7 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-env/
+venv/
 build/
 develop-eggs/
 dist/
@@ -69,12 +69,14 @@ ENV/
 
 # Sphinx documentation
 docs/_build/
+docs/
 
 # PyBuilder
 target/
 
 # Unit test / coverage reports
 htmlcov/
+tests/
 .tox/
 .coverage
 .coverage.*
