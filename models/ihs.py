@@ -7,7 +7,7 @@ from .property_helper import PropertyMeta, Property
 class Model( QtCore.QObject, metaclass=PropertyMeta):
 
 
-    project_name = Property( 'Untitled.tml' )
+    project_name = Property( 'Untitled.fml' )
 
     def __init__( self, view ):
         super().__init__()

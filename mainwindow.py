@@ -3,7 +3,7 @@
 import sys
 import os
 
-from PyQt5.QtCore import QUrl
+from PyQt5.QtCore import QUrl, QSize
 from PyQt5.QtGui import QGuiApplication
 from PyQt5.QtQuick import QQuickView
 
@@ -23,14 +23,17 @@ class MainWindow ( QQuickView ):
         self.setHeight(720)
         self.setTitle("Fig")
 
+        # View settings
         self.setResizeMode( QQuickView.SizeRootObjectToView )
-        self.setSource( QUrl.fromLocalFile(os.path.join(os.path.dirname(__file__), "qml/MainView.qml")) )
+        self.setSource( QUrl.fromLocalFile(os.path.join(os.path.dirname(__file__), "items/MainView.qml")) )
         self.rootContext().setContextProperty( "MainWindow", self )
+        self.setMinimumSize( QSize(1280, 720) )
 
         # Model-View-Controller
         self.initMVC()
 
-    def initMVC(self):
+    def initMVC( self ):
+        """ Init the MVC architecture """
         self._model = Model( self )
         self.engine().rootContext().setContextProperty( "model", self._model )
 

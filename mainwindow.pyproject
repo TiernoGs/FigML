@@ -4,6 +4,8 @@
         "models/ihs.py",
         "items/MainView.qml",
         "items/CustomPanel.qml",
-        "items/EditorIcon.qml"
+        "items/EditorIcon.qml",
+        "items/FigToolBar.qml",
+        "items/FigStatusBar.qml"
         ]
 }

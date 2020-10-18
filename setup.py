@@ -14,9 +14,9 @@ setup(
     version='0.1.0',
     description='Machine Learning Features In GUI',
     long_description=readme,
-    author='Tierno Gras',
-    author_email='tierno.gras@gmail.com',
-    url='https://github.com/',
+    author='Tierno G.',
+    author_email='...',
+    url='https://github.com/TiernoGs/FigML',
     license=license,
     packages=find_packages(exclude=('tests', 'docs'))
 )
